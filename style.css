@@ -107,12 +107,39 @@ header p {
 
 .contact ul li a {
   font-size: 28px;
-  color: #f0f0f0;
+  text-decoration: none;
   transition: color 0.2s, transform 0.2s;
 }
 
+/* Individual social icon colors */
+.contact ul li a .email {
+  color: #007bff;
+}
+.contact ul li a .discord {
+  color: #5865F2;
+}
+.contact ul li a .instagram {
+  color: #E4405F;
+}
+.contact ul li a .roblox {
+  color: #FF4754;
+}
+
+/* On hover: darker shades */
+.contact ul li a:hover .email {
+  color: #0056b3;
+}
+.contact ul li a:hover .discord {
+  color: #404EED;
+}
+.contact ul li a:hover .instagram {
+  color: #bc2a8d;
+}
+.contact ul li a:hover .roblox {
+  color: #C8001A;
+}
+
 .contact ul li a:hover {
-  color: #1da1f2;
   transform: scale(1.1);
 }
 
