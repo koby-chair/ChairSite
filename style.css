@@ -131,10 +131,11 @@ header p {
   object-fit: contain;
   background: transparent;
   border-radius: 6px;
-  /* Optional: add a drop shadow for visibility on dark backgrounds */
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.2s, box-shadow 0.2s;
-  /* Remove any background by using PNG transparency */
+  vertical-align: middle;
+  position: relative;
+  top: 2px; /* Adjust this value for perfect alignment */
 }
 
 /* On hover: darker shades */
@@ -148,7 +149,6 @@ header p {
   color: #bc2a8d;
 }
 .contact ul li a.roblox:hover .roblox-icon {
-  /* Slight scale and shadow effect on hover */
   transform: scale(1.1);
   box-shadow: 0 4px 16px rgba(255,71,84,0.5);
 }
