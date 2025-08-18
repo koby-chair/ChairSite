@@ -38,7 +38,7 @@ header p {
 }
 
 /* Shared card style */
-.profile, .gallery, .contact {
+.profile, .contact {
   background: #333;
   border-radius: 12px;
   padding: 30px;
@@ -64,31 +64,6 @@ header p {
 .profile h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-}
-
-/* Gallery section */
-.gallery h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-}
-
-.gallery .images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-}
-
-.gallery .images img {
-  width: 180px;
-  height: auto;
-  border-radius: 10px;
-  transition: transform 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
-}
-
-.gallery .images img:hover {
-  transform: scale(1.04);
 }
 
 /* Contact section */
@@ -124,8 +99,15 @@ header p {
   color: #E4405F;
 }
 
+/* Roblox custom icon wrapper for alignment */
+.roblox-icon-wrapper {
+  display: flex;
+  align-items: center;
+  height: 28px; /* Match the icon font-size for best alignment */
+}
+
 /* Roblox custom icon */
-.contact ul li a.roblox .roblox-icon {
+.roblox-icon {
   width: 32px;
   height: 32px;
   object-fit: contain;
@@ -133,9 +115,8 @@ header p {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   transition: transform 0.2s, box-shadow 0.2s;
-  vertical-align: middle;
-  position: relative;
-  top: 2px; /* Adjust this value for perfect alignment */
+  display: block;
+  margin-top: -2px; /* Nudge up to match icon baseline */
 }
 
 /* On hover: darker shades */
