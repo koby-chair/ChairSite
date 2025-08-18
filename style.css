@@ -109,6 +109,8 @@ header p {
   font-size: 28px;
   text-decoration: none;
   transition: color 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
 }
 
 /* Individual social icon colors */
@@ -121,8 +123,18 @@ header p {
 .contact ul li a .instagram {
   color: #E4405F;
 }
-.contact ul li a .roblox {
-  color: #FF4754;
+
+/* Roblox custom icon */
+.contact ul li a.roblox .roblox-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  background: transparent;
+  border-radius: 6px;
+  /* Optional: add a drop shadow for visibility on dark backgrounds */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+  /* Remove any background by using PNG transparency */
 }
 
 /* On hover: darker shades */
@@ -135,8 +147,10 @@ header p {
 .contact ul li a:hover .instagram {
   color: #bc2a8d;
 }
-.contact ul li a:hover .roblox {
-  color: #C8001A;
+.contact ul li a.roblox:hover .roblox-icon {
+  /* Slight scale and shadow effect on hover */
+  transform: scale(1.1);
+  box-shadow: 0 4px 16px rgba(255,71,84,0.5);
 }
 
 .contact ul li a:hover {
